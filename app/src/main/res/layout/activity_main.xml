@@ -1,0 +1,156 @@
+<RelativeLayout
+    android:id="@+id/activity_main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_activity_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="61dp"
+        android:background="#f8f8f8">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/menu_dial_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/menu_dial_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_d9d9d9"/>
+
+            <TextView
+                android:id="@+id/menu_dial_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="拨号"
+                android:textColor="@color/color_333333"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_d9d9d9"/>
+
+        <RelativeLayout
+            android:id="@+id/menu_smart_dial_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/menu_smart_dial_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_d9d9d9"/>
+
+            <TextView
+                android:id="@+id/menu_smart_dial_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="智能拨号"
+                android:textColor="@color/color_333333"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_d9d9d9"/>
+
+        <RelativeLayout
+            android:id="@+id/menu_service_appointment_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/menu_service_appointment_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_d9d9d9"/>
+
+            <TextView
+                android:id="@+id/menu_service_appointment_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="服务预约"
+                android:textColor="@color/color_333333"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_d9d9d9"/>
+
+        <RelativeLayout
+            android:id="@+id/menu_SMS_record_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/menu_SMS_record_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_d9d9d9"/>
+
+            <TextView
+                android:id="@+id/menu_SMS_record_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="短信记录"
+                android:textColor="@color/color_333333"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_d9d9d9"/>
+
+        <RelativeLayout
+            android:id="@+id/menu_set_up_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/menu_set_up_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/color_d9d9d9"/>
+
+            <TextView
+                android:id="@+id/menu_set_up_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="设置"
+                android:textColor="@color/color_333333"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

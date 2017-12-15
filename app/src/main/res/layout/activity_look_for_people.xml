@@ -1,0 +1,221 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="姓名："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color_f3f5f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="电话："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="公司："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color_f3f5f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="职位："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="生日："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_brithday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color_f3f5f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="地址："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="备注："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/activity_look_for_people_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="暂无"
+            android:textColor="#333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_d9d9d9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_look_for_people_edit_btn"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/background_007aff"
+            android:text="编辑联系人"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/activity_look_for_people_del_btn"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/background_ff2e2e"
+            android:text="删除联系人"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

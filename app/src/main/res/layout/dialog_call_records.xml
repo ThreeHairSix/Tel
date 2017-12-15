@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_call_records"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialog_call_records_service_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="新建预约"
+        android:textColor="@color/color_ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/dialog_call_records_look_for_mp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="查看录音"
+        android:textColor="@color/color_ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/dialog_call_records_add_to_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="添加到通讯录"
+        android:textColor="@color/color_ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/dialog_call_records_add_to_blacklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="加入黑名单"
+        android:textColor="@color/color_ffffff"
+        android:textSize="20sp"/>
+
+</LinearLayout>

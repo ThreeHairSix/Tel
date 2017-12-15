@@ -1,0 +1,92 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/activity_contacts_search_layout"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_d9d9d9_2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_bar_icon_normal"/>
+
+            <EditText
+                android:id="@+id/activity_contacts_search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="搜索联系人"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_contacts_search_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/activity_contacts_search_layout"
+            android:background="@drawable/background_007aff"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/activity_contacts_add_people"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_1aad19"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/add_white_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加联系人"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_contacts_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:divider="@color/color_f3f5f7"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

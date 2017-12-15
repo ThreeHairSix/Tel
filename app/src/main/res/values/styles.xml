@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--静音-->
+    <style name="MuteCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_mute</item>
+    </style>
+    <!--拨号键盘-->
+    <style name="KeyboardCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_keyboard</item>
+    </style>
+    <!--免提-->
+    <style name="HandsFreeCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_hands_free</item>
+    </style>
+    <!--蓝色对号-->
+    <style name="CheckmarkCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_checkmark</item>
+    </style>
+</resources>

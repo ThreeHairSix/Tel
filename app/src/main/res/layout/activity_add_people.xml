@@ -1,0 +1,273 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="姓名："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/activity_add_people_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_d9d9d9_4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:id="@+id/activity_add_people_radioGroupID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity_add_people_radiogroup_men"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:text="男士"
+                android:textColor="#333333"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/activity_add_people_radiogroup_women"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:text="女士"
+                android:textColor="#333333"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/activity_add_people_radiogroup_company"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:text="公司"
+                android:textColor="#333333"
+                android:textSize="20sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_f3f5f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="电话："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/activity_add_people_tel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_d9d9d9_4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="公司："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/activity_add_people_company"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_d9d9d9_4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_f3f5f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="职位："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/activity_add_people_position"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_d9d9d9_4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="生日："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/activity_add_people_birthday_layout"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/background_d9d9d9_4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/date_icon"/>
+
+            <TextView
+                android:id="@+id/activity_add_people_birthday_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择日期"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_f3f5f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="地址："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/activity_add_people_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_d9d9d9_4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="备注："
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/activity_add_people_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_d9d9d9_4"
+            android:gravity="top|left"
+            android:minHeight="150dp"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/color_d9d9d9"/>
+
+    <Button
+        android:id="@+id/activity_add_people_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_007aff"
+        android:text="保存联系人"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+</LinearLayout>

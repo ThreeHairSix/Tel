@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f3f5f7">
+
+    <TextView
+        android:id="@+id/listview_sms_stencil_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:textColor="#333333"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/listview_sms_stencil_item_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/listview_sms_stencil_item_icon"/>
+
+</RelativeLayout>

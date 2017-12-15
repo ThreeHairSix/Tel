@@ -1,0 +1,392 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/activity_dial_head"/>
+
+    <TextView
+        android:id="@+id/activity_dial_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#333333"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/activity_dial_tel_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#333333"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/activity_dial_icon"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_dial_tel_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#249b24"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/activity_dial_tel_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通话中……"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/activity_dial_recording_icon"/>
+
+        <TextView
+            android:id="@+id/activity_dial_recording_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录音中……"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/activity_dial_mute_check_box"
+                style="@style/MuteCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <TextView
+                android:id="@+id/activity_dial_mute_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="静音"
+                android:textColor="@color/color_999999"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/activity_dial_keyboard_check_box"
+                style="@style/KeyboardCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <TextView
+                android:id="@+id/activity_dial_keyboard_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="拨号键盘"
+                android:textColor="@color/color_999999"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/activity_dial_hands_free_check_box"
+                style="@style/HandsFreeCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:scaleX="0.9"
+                android:scaleY="0.9"/>
+
+            <TextView
+                android:id="@+id/activity_dial_hands_free_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="免提"
+                android:textColor="@color/color_999999"
+                android:textSize="22sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_dial_keyboard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="250dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_xing"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="*"
+                    android:textColor="@color/color_ff7200"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_zero"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="#333333"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/activity_dial_keyboard_jing"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_d9d9d9_3"
+                    android:gravity="center"
+                    android:text="#"
+                    android:textColor="@color/color_ff7200"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_dial_sms"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_e3e7eb"
+                android:text="发短信"
+                android:textColor="@color/color_333333"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/activity_dial_service_apponintment"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_e3e7eb"
+                android:text="新建预约"
+                android:textColor="@color/color_333333"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/activity_dial_remarks"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_e3e7eb"
+                android:text="快速备注"
+                android:textColor="@color/color_333333"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/activity_dial_hangs_up"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_ff2e2e"
+                android:text="挂断"
+                android:textColor="@color/color_ffffff"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
